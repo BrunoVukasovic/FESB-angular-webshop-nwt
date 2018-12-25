@@ -1,7 +1,27 @@
 <div class="rating">
-  <i class="far fa-star"></i>
-  <i class="far fa-star"></i>
-  <i class="far fa-star"></i>
-  <i class="far fa-star"></i>
-  <i class="far fa-star"></i>
+  <!-- dom style object properties -->
+  <!-- style binding, event biding, mosh -->
+  <i class="far fa-star"
+  [style.fontWeight]="isActive[0] ? '800' : '400'"
+  (click)="onClick(1)"
+  ></i>
+
+  <i class="far fa-star"
+  [style.fontWeight]="isActive[1] ? '800' : '400'"
+  (click)="onClick(2)"></i>
+
+  <i class="far fa-star"
+  [style.fontWeight]="isActive[2] ? '800' : '400'"
+  (click)="onClick(3)"
+  ></i>
+
+  <i class="far fa-star"
+  [style.fontWeight]="isActive[3] ? '800' : '400'"
+  (click)="onClick(4)"
+  ></i>
+
+  <i class="far fa-star"
+  [style.fontWeight]="isActive[4] ? '800' : '400'"
+  (click)="onClick(5)"
+  ></i>
 </div>
