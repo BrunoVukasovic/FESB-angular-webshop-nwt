@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { IItem } from 'src/app/models/item.model';
+import { ItemService } from 'src/app/services/item.service';
 
 @Component({
   selector: 'app-item-list',
@@ -6,10 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item-list.component.css']
 })
 export class ItemListComponent implements OnInit {
+  items: Observable<IItem[]>;
 
-  constructor() { }
+  // dependecy injection is defined in constructor
+  constructor(private itemService: ItemService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.items = this.itemService.getItems();
   }
 
 }

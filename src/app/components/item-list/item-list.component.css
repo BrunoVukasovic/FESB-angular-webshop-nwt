@@ -1,0 +1,25 @@
+.item{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  max-height: 500px;
+}
+
+.heading{
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.image{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.description{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.image > img{
+  width: 300px;
+}
