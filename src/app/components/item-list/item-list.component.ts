@@ -14,6 +14,8 @@ export class ItemListComponent implements OnInit {
   // dependecy injection is defined in constructor
   constructor(private itemService: ItemService) { }
 
+
+
   ngOnInit(): void {
     this.items = this.itemService.getItems();
   }
