@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "heading": "Naslov itema 1",
+    "image": "/assetes/images/item1",
+    "description": "Opis Itema 1",
+    "marks": [3, 4, 5],
+    "reviews": ["review1", "review2", "review3"],
+    "favourite": true
+  },
+  {
+    "id": 2,
+    "heading": "Naslov itema 1",
+    "image": "/assetes/images/item1",
+    "description": "Opis Itema 1",
+    "marks": [3, 4, 5],
+    "reviews": ["review1", "review2", "review3"]
+  },
+  {
+    "id": 3,
+    "heading": "Naslov itema 1",
+    "image": "/assetes/images/item1",
+    "description": "Opis Itema 1",
+    "marks": [3, 4, 5],
+    "reviews": ["review1", "review2", "review3"]
+  }
+]
