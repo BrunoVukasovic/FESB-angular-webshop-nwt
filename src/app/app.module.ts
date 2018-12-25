@@ -7,13 +7,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RatingComponent } from './components/rating/rating.component';
+import { FavouriteAsideComponent } from './components/favourite-aside/favourite-aside.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ItemListComponent,
-    RatingComponent
+    RatingComponent,
+    FavouriteAsideComponent
   ],
   imports: [
     BrowserModule,
