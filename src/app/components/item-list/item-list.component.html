@@ -1,7 +1,6 @@
 <div class = "item-list">
   <div class="item"
   *ngFor = "let item of (items | async); let i = index"
-
   >
 
     <div class="heading">
@@ -17,5 +16,6 @@
       <app-rating [marks] = "item.marks">
       </app-rating>
     </div>
+
   </div>
 </div>
