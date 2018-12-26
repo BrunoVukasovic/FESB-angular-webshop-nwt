@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./rating.component.css']
 })
 export class RatingComponent implements OnInit {
-  @Input() marks: number[];
+  @Input() marks: number[];   // prima od item-list komponente
   averageRating: number;
   sum: number;
   isActive: boolean[];

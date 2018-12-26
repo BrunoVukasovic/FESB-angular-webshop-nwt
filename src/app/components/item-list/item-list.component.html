@@ -12,6 +12,10 @@
     <div class="description">
       <p>{{ item.description }}</p>
     </div>
+    <div class = "addToFavourites">
+      <app-favourite-button [item] = "item">
+      </app-favourite-button>
+    </div>
     <div class = "ratingStars">
       <app-rating [marks] = "item.marks">
       </app-rating>

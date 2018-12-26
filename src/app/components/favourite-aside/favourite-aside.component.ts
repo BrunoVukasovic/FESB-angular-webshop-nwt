@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ItemService } from 'src/app/services/item.service';
+import { IItem } from 'src/app/models/item.model';
 
 @Component({
   selector: 'app-favourite-aside',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./favourite-aside.component.css']
 })
 export class FavouriteAsideComponent implements OnInit {
+  favouriteItems: IItem[];
 
-  constructor() { }
+
+  constructor(private itemService: ItemService) { }
 
   ngOnInit() {
+    this.itemService.getItems().subscribe((items: IItem[]) => {
+      // subscribe == kad dohvati itemse obavjesiti ce nas, do tad ne blokira main tread
+      // items su objekti iz jsona
+      this.favouriteItems = items.filter((eachItem: IItem) => eachItem.favourite === true);
+    });
   }
 
 }
