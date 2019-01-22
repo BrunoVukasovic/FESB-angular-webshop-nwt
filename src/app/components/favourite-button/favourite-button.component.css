@@ -1,0 +1,10 @@
+.favourite {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.favourite > i {
+  color: blue;
+}
+

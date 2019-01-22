@@ -1,1 +1,12 @@
-<button (click) = "AddToFavourites(item)">Add to favourites</button>
+<!-- <button (click) = "AddToFavourites(item)">Add to favourites</button>
+
+[class.fa-star]= "isFavourite"
+[class.fa-star-o]="!isFavorite"
+-->
+<div class="favourite">
+  <i
+  class="fa-heart"
+  [class.far] = "!isFavourite"
+  [class.fas] = "isFavourite"
+  ></i>
+</div>

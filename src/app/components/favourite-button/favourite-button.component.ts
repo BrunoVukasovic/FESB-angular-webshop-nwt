@@ -12,14 +12,25 @@ import { FavouriteAsideComponent } from '../favourite-aside/favourite-aside.comp
 export class FavouriteButtonComponent implements OnInit {
   @Input() item: IItem; // prima od item-list komponente
   favouriteItems: IItem[];
+  isFavourite: boolean;
 
   constructor(private httpClient: HttpClient, private itemSerivce: ItemService) { }
 
   ngOnInit() {
+    if ( this.item.favourite === true) {
+      this.isFavourite = true;
+    } else {
+      this.isFavourite = false;
+    }
   }
 
   AddToFavourites() {
-    this.item.favourite = true;
+    this.isFavourite = !this.isFavourite;
+    if ( this.item.favourite === true) {
+      this.item.favourite = false;
+    } else {
+      this.item.favourite = true;
+    }
     // this.httpClient.put('/assets/items.json', JSON.stringify(this.item));
     this.httpClient.patch('/assets/items.json', JSON.stringify( {favourite: true} ));
     console.log(JSON.stringify(this.item));

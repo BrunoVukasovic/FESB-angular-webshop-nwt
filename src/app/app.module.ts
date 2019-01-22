@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RatingComponent } from './components/rating/rating.component';
 import { FavouriteAsideComponent } from './components/favourite-aside/favourite-aside.component';
 import { FavouriteButtonComponent } from './components/favourite-button/favourite-button.component';
+import { ItemDetailsComponent } from './components/item-details/item-details.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FavouriteButtonComponent } from './components/favourite-button/favourit
     ItemListComponent,
     RatingComponent,
     FavouriteAsideComponent,
-    FavouriteButtonComponent
+    FavouriteButtonComponent,
+    ItemDetailsComponent
   ],
   imports: [
     BrowserModule,
