@@ -18,7 +18,16 @@ export class FavouriteAsideComponent implements OnInit {
       // subscribe == kad dohvati itemse obavjesiti ce nas, do tad ne blokira main tread
       // items su objekti iz jsona
       this.favouriteItems = items.filter((eachItem: IItem) => eachItem.favourite === true);
+
+      this.itemService.favouriteSubject.subscribe( item => {
+        console.log(item);
+        this.favouriteItems.push(item);
+        console.log(this.favouriteItems);
+      });
     });
   }
 
+  update() {
+    this.ngOnInit();
+  }
 }
