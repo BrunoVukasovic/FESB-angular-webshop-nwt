@@ -1,7 +1,10 @@
 <div class="itemDetails">
+  <div class="backButton">
+    <a [routerLink]="['/items']" class="previous">&laquo; Previous</a>
+  </div>
   <h2>{{ item.heading }}</h2>
 
-  <img src="{{ item.image }}" />
+  <img class="mainImage" src="{{ item.image }}" />
 
   <p> {{ item.description }}</p>
 

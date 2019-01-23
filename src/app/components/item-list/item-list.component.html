@@ -2,22 +2,31 @@
 
   <div class="item"
   *ngFor = "let item of (items | async); let i = index"
-  (click)="viewItem(item.id)"
   >
 
-    <div class="heading">
+    <div class="heading"
+    (click)="viewItem(item.id)"
+    >
       <h2>{{ item.heading }}</h2>
     </div>
-    <div class="image">
+
+    <div class="image"
+    (click)="viewItem(item.id)"
+    >
       <img src="{{ item.image }}" alt="{{ item.id }} image" />
     </div>
-    <div class="description">
+
+    <div class="description"
+    (click)="viewItem(item.id)"
+    >
       <p>{{ item.description }}</p>
     </div>
+
     <div class = "addToFavourites">
       <app-favourite-button [item] = "item">
       </app-favourite-button>
     </div>
+
     <div class = "ratingStars">
       <app-rating [marks] = "item.marks">
       </app-rating>

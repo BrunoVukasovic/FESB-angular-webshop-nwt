@@ -5,11 +5,14 @@
 }
 
 .heading{
+  background-color: #023862;
   color: white;
-  font-size: 30px;
-  font-weight: bold;
-
+  border: none;
+  display: flex;
+  position: center;
+  justify-content: center;
 }
+
 
 .favouruteItem {
   color: black;
