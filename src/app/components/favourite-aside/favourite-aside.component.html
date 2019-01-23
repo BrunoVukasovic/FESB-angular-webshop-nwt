@@ -1,3 +1,9 @@
-<div class="favourites" *ngFor="let item of favouriteItems">
-  <h2>{{ item.heading }}</h2>
+<div class="favourites">
+    <h1>Favourites</h1>
+
+
+  <div class="favouriteItems" *ngFor="let item of favouriteItems">
+      <li class="favouruteItem">{{ item.heading }}</li>
+    </div>
 </div>
+

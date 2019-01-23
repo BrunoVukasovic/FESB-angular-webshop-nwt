@@ -19,15 +19,14 @@ export class FavouriteAsideComponent implements OnInit {
       // items su objekti iz jsona
       this.favouriteItems = items.filter((eachItem: IItem) => eachItem.favourite === true);
 
+      /* ne radi
       this.itemService.favouriteSubject.subscribe( item => {
         console.log(item);
         this.favouriteItems.push(item);
         console.log(this.favouriteItems);
       });
+      */
     });
   }
 
-  update() {
-    this.ngOnInit();
-  }
 }
