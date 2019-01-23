@@ -5,7 +5,19 @@
     "image": "/assets/img/golf.jpg",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu lorem a nisl vulputate gravida. Sed mattis posuere purus, at euismod neque mollis eu. Vestibulum porta at nunc sed condimentum. Morbi a purus at dolor rutrum porta quis quis leo. Nam sapien neque, tincidunt ac finibus nec, lobortis non libero. Sed facilisis, turpis sit amet pretium scelerisque, massa justo vehicula mi, ut molestie risus lectus sodales felis. Vestibulum semper, risus vitae mollis blandit, orci sapien euismod sapien, quis malesuada quam augue vel velit. Vivamus ultrices et augue at interdum. Nulla facilisis diam eget fermentum vestibulum. Aenean dignissim luctus nisi, non pellentesque elit egestas ac. Donec at facilisis erat. Aliquam sit amet arcu quis massa mattis iaculis nec non sem. Nunc condimentum tempus eleifend. Aenean pellentesque sed justo eu venenatis.",
     "marks": [3, 4, 5],
-    "reviews": ["review1", "review2", "review3"],
+    "reviews":
+      [
+      {
+        "id": 1,
+        "mark": 3,
+        "text": "neki text revew1"
+      },
+      {
+        "id": 2,
+        "mark": 4,
+        "text": "neki text revew2"
+      }
+    ],
     "favourite": true
   },
   {

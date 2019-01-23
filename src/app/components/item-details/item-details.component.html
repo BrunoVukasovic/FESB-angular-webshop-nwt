@@ -1,9 +1,13 @@
 <div class="itemDetails">
   <h2>{{ item.heading }}</h2>
+
   <img src="{{ item.image }}" />
+
   <p> {{ item.description }}</p>
+
   <p>Rating:</p>
   <app-rating [marks]="item.marks" ></app-rating>
+
   <p>Reviews:</p>
   <p> {{ item.reviews }}</p>
 </div>

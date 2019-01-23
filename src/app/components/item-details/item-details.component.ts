@@ -21,6 +21,7 @@ export class ItemDetailsComponent implements OnInit, OnDestroy {
         this.item = items.find((selectedItem: IItem) => selectedItem.id === +params['id']);
       });
     });
+
   }
 
   ngOnDestroy(): void {
