@@ -31,6 +31,7 @@ export class FavouriteButtonComponent implements OnInit {
     } else {
       this.item.favourite = true;
     }
+
     // this.httpClient.put('/assets/items.json', JSON.stringify(this.item));
     this.httpClient.patch('/assets/items.json', JSON.stringify( {favourite: true} ));
     console.log(JSON.stringify(this.item));
